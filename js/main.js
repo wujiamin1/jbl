@@ -1,13 +1,13 @@
 $(function(){
 	//侧边栏弹出
-	$(".wap-slide-bar h4").click(function(){
+	$(".wap_slide_bar h4").click(function(){
 		var i = $(this).index('h4');
 		$(this).toggleClass("on");
-		$(".wap-slide-bar ul").eq(i).toggle();
+		$(".wap_slide_bar ul").eq(i).toggle();
 	});
 	$(".header_wap .wap_menu").click(function(){
 		$(this).toggleClass("on");
-		$(".wap-slide-bar").toggleClass("show");
+		$(".wap_slide_bar").toggleClass("show");
 	})
 	
 	//导航菜单弹出
