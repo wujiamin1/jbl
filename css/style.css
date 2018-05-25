@@ -1547,6 +1547,84 @@
 				max-width: 100%;
 				min-height: 100%;
 			}
+			/*家装色彩体系样式*/
+			
+			.jz_sctx {
+				padding: 0 20px;
+				margin-bottom: 40px;
+			}
+			
+			.jz_sctx .color_swiper {
+				position: relative;
+				background: #f1f1f1;
+				padding: 20px 44px;
+			}
+			
+			.jz_sctx .color_swiper .swiper-container {
+				padding-bottom: 9px;
+			}
+			
+			.jz_sctx .color_swiper .color_box {
+				position: relative;
+				border: 2px solid #fff;
+			}
+			
+			.jz_sctx .color_swiper .on .color_box {
+				border-color: #c6458d;
+			}
+			
+			.jz_sctx .color_swiper .on .color_box:before {
+				position: absolute;
+				content: '';
+				display: block;
+				width: 19px;
+				height: 9px;
+				background: url(../img/icon_color.png) no-repeat;
+				bottom: -9px;
+				left: 50%;
+				margin-left: -9.5px;
+			}
+			
+			.jz_sctx .color_swiper .color_box img {
+				width: 100%;
+			}
+			
+			.jz_sctx .color_swiper .color_box .txt {
+				position: absolute;
+				width: 100%;
+				height: 40px;
+				top: 50%;
+				margin-top: -20px;
+				left: 0;
+				z-index: 1;
+				text-align: center;
+				display: table;
+				display: none;
+			}
+			
+			.jz_sctx .color_swiper .on .color_box .txt {
+				display: block;
+			}
+			
+			.jz_sctx .detail_swiper {
+				margin-top: 10px;
+			}
+			
+			.jz_sctx .detail_swiper .detail_left {
+				position: relative;
+				float: left;
+				margin-right: 10px;
+			}
+			
+			.jz_sctx .detail_swiper .detail_left p {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				color: #fff;
+				padding: 10px 15px;
+				background: rgba(0, 0, 0, .5);
+			}
 			
 			@media (max-width:1200px) {
 				header {
