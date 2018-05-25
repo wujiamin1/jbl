@@ -23,17 +23,16 @@ $(function(){
 		$(".pop_bg").hide();
 	});
 	
-//	$(".pro-detail .pro-des .pro-des-t").click(function(){
-//		var i = $(this).index(".pro-des-t");
-//		$(this).toggleClass("active");
-//		if($(this).hasClass("active")){
-//			$(this).find("span").removeClass("glyphicon-plus").addClass('glyphicon-minus');
-//		}else{
-//			$(this).find("span").removeClass("glyphicon-minus").addClass('glyphicon-plus');
-//		}
-//		console.log(i)
-//		$(".pro-detail .pro-des .pro-des-c").eq(i).slideToggle();
-//	});
+	$(".pro_detail .pro_des .pro_des_t").click(function(){
+		var i = $(this).index(".pro_des_t");
+		$(this).toggleClass("active");
+		if($(this).hasClass("active")){
+			$(this).find("span").removeClass("glyphicon-minus").addClass('glyphicon-plus');
+		}else{
+			$(this).find("span").removeClass("glyphicon-plus").addClass('glyphicon-minus');
+		}
+		$(".pro_detail .pro_des .pro_des_c").eq(i).slideToggle();
+	});
 	
 	var bodyWidth = $(window).width();
 	setHover(bodyWidth);
